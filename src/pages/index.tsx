@@ -41,7 +41,7 @@ function HeroSection() {
           <div className="lg:col-span-3">
             <p
               className="text-xs font-bold tracking-widest mb-4 uppercase"
-              style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
+              style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               ▪ DISTRIBUIDOR OFICIAL
             </p>
@@ -56,7 +56,7 @@ function HeroSection() {
             >
               MAQUINARIA
               <br />
-              <span style={{ color: '#D4A520' }}>TABASCO</span>
+              <span style={{ color: '#CC0000' }}>TABASCO</span>
             </h1>
             <h2
               className="font-bold mb-6"
@@ -79,11 +79,11 @@ function HeroSection() {
                 href="/#contacto"
                 className="inline-block px-8 py-4 text-base font-bold tracking-wider text-white transition-colors"
                 style={{
-                  backgroundColor: '#D4A520',
+                  backgroundColor: '#CC0000',
                   fontFamily: "'Barlow Condensed', sans-serif",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C49518')}
-                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4A520')}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E60000')}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#CC0000')}
               >
                 CONTÁCTANOS
               </a>
@@ -117,8 +117,8 @@ function HeroSection() {
                 />
               </div>
             </div>
-            {/* Yellow accent bar */}
-            <div className="h-1 w-full" style={{ backgroundColor: '#D4A520' }} />
+            {/* Red accent bar */}
+            <div className="h-1 w-full" style={{ backgroundColor: '#CC0000' }} />
           </div>
         </div>
       </div>
@@ -181,7 +181,7 @@ const services = [
     title: 'REPARACIÓN',
     desc: 'Diagnóstico y reparación especializada con técnicos certificados.',
     large: false,
-    bg: '#D4A520',
+    bg: '#CC0000',
     accent: true,
   },
   {
@@ -207,7 +207,7 @@ function ServicesSection() {
       <div className="container mx-auto px-6">
         <p
           className="text-xs font-bold tracking-widest mb-2"
-          style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
+          style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
         >
           ▪ LO QUE HACEMOS
         </p>
@@ -216,7 +216,7 @@ function ServicesSection() {
           style={{
             fontFamily: "'Barlow Condensed', sans-serif",
             fontSize: 'clamp(36px, 5vw, 56px)',
-            color: '#D4A520',
+            color: '#CC0000',
           }}
         >
           NUESTROS SERVICIOS
@@ -237,7 +237,7 @@ function ServicesSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
             <div
               className="absolute left-0 top-0 bottom-0 w-1 opacity-0 group-hover:opacity-100 transition-opacity"
-              style={{ backgroundColor: '#D4A520' }}
+              style={{ backgroundColor: '#CC0000' }}
             />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <h3
@@ -272,10 +272,10 @@ function ServicesSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 </>
               )}
-              {/* Yellow left border on hover */}
+              {/* Red left border on hover */}
               <div
                 className="absolute left-0 top-0 bottom-0 w-1 opacity-0 group-hover:opacity-100 transition-opacity"
-                style={{ backgroundColor: service.accent ? '#FFFFFF' : '#D4A520' }}
+                style={{ backgroundColor: service.accent ? '#FFFFFF' : '#CC0000' }}
               />
               <div className="relative p-5 h-full flex flex-col justify-between">
                 <div>
@@ -335,7 +335,7 @@ function EquipmentSection() {
           <div>
             <p
               className="text-xs font-bold tracking-widest mb-2"
-              style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
+              style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               ▪ CATÁLOGO
             </p>
@@ -371,10 +371,10 @@ function EquipmentSection() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-              {/* Yellow bottom border on hover */}
+              {/* Red bottom border on hover */}
               <div
                 className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity"
-                style={{ backgroundColor: '#D4A520' }}
+                style={{ backgroundColor: '#CC0000' }}
               />
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <h3
@@ -435,10 +435,10 @@ function DistributorSection() {
 function CTASection() {
   return (
     <section id="contacto" className="flex flex-col md:flex-row">
-      {/* Left — Yellow */}
+      {/* Left — Red */}
       <div
         className="flex-1 px-10 py-16 flex flex-col justify-center"
-        style={{ backgroundColor: '#D4A520' }}
+        style={{ backgroundColor: '#CC0000' }}
       >
         <h2
           className="font-black text-white mb-4 leading-none"
@@ -462,7 +462,7 @@ function CTASection() {
           className="inline-block px-8 py-4 text-base font-bold tracking-wider transition-colors self-start"
           style={{
             backgroundColor: '#FFFFFF',
-            color: '#D4A520',
+            color: '#CC0000',
             fontFamily: "'Barlow Condensed', sans-serif",
           }}
           onMouseEnter={(e) => {
@@ -476,10 +476,10 @@ function CTASection() {
         </a>
       </div>
 
-      {/* Right — Dark Yellow */}
+      {/* Right — Dark Red */}
       <div
         className="flex-1 px-10 py-16 flex flex-col justify-center gap-6"
-        style={{ backgroundColor: '#B8900E' }}
+        style={{ backgroundColor: '#B22222' }}
       >
         <a
           href="tel:9933570560"
