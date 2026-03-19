@@ -2,7 +2,7 @@ import { Facebook, Phone, Mail, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#111111' }}>
+    <footer style={{ backgroundColor: '#1A1A1A' }}>
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Column 1 — Brand */}
@@ -34,8 +34,8 @@ export default function Footer() {
           {/* Column 2 — Navigation */}
           <div>
             <h3
-              className="text-sm font-bold tracking-widest text-gray-500 mb-6 uppercase"
-              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+              className="text-sm font-bold tracking-widest mb-6 uppercase"
+              style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               Navegación
             </h3>
@@ -65,8 +65,8 @@ export default function Footer() {
           {/* Column 3 — Contact */}
           <div>
             <h3
-              className="text-sm font-bold tracking-widest text-gray-500 mb-6 uppercase"
-              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+              className="text-sm font-bold tracking-widest mb-6 uppercase"
+              style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               Contacto
             </h3>
@@ -75,21 +75,21 @@ export default function Footer() {
                 href="tel:9933570560"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
               >
-                <Phone size={16} className="text-red-600 flex-shrink-0" />
+                <Phone size={16} className="flex-shrink-0" style={{ color: '#D4A520' }} />
                 <span style={{ fontFamily: "'Barlow', sans-serif" }}>993 3570560</span>
               </a>
               <a
                 href="tel:9931187676"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
               >
-                <Phone size={16} className="text-red-600 flex-shrink-0" />
+                <Phone size={16} className="flex-shrink-0" style={{ color: '#D4A520' }} />
                 <span style={{ fontFamily: "'Barlow', sans-serif" }}>993 1187676</span>
               </a>
               <a
                 href="mailto:administracion@kaufmann.mx"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
               >
-                <Mail size={16} className="text-red-600 flex-shrink-0" />
+                <Mail size={16} className="flex-shrink-0" style={{ color: '#D4A520' }} />
                 <span style={{ fontFamily: "'Barlow', sans-serif" }}>administracion@kaufmann.mx</span>
               </a>
               <a
@@ -109,7 +109,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div
         className="border-t border-gray-800 py-4"
-        style={{ backgroundColor: '#0A0A0A' }}
+        style={{ backgroundColor: '#111111' }}
       >
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2">
           <p
