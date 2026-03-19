@@ -158,7 +158,7 @@ const services = [
     desc: 'Amplio catálogo de montacargas, excavadoras y más equipos industriales nuevos y usados.',
     image: '/airo-assets/images/services/venta-maquinaria',
     large: true,
-    bg: '#FFFFFF',
+    bg: '#1E1E1E',
   },
   {
     id: 'renta',
@@ -166,7 +166,7 @@ const services = [
     desc: 'Renta flexible por día, semana o mes. Equipos listos para operar.',
     image: '/airo-assets/images/services/renta-maquinaria',
     large: false,
-    bg: '#F5F5F5',
+    bg: '#2E2E2E',
   },
   {
     id: 'mantenimiento',
@@ -174,7 +174,7 @@ const services = [
     desc: 'Programas preventivos y correctivos para maximizar la vida útil de tu equipo.',
     image: '/airo-assets/images/services/mantenimiento',
     large: false,
-    bg: '#EEEEEE',
+    bg: '#252525',
   },
   {
     id: 'reparacion',
@@ -189,22 +189,21 @@ const services = [
     title: 'REFACCIONES',
     desc: 'Piezas originales y compatibles para todas las marcas de maquinaria.',
     large: false,
-    bg: '#F5F5F5',
+    bg: '#1A1A1A',
   },
   {
     id: 'llantas',
     title: 'LLANTAS SÓLIDAS',
     desc: 'Distribuidor oficial Continental. Llantas de alta resistencia para montacargas.',
     large: false,
-    bg: '#1A1A1A',
-    dark: true,
+    bg: '#2E2E2E',
     brandLogo: '/images/b6926639df7484260968f3d73b544969.png',
   },
 ];
 
 function ServicesSection() {
   return (
-    <section id="servicios" className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
+    <section id="servicios" className="py-20" style={{ backgroundColor: '#111111' }}>
       <div className="container mx-auto px-6">
         <p
           className="text-xs font-bold tracking-widest mb-2"
@@ -217,7 +216,7 @@ function ServicesSection() {
           style={{
             fontFamily: "'Barlow Condensed', sans-serif",
             fontSize: 'clamp(36px, 5vw, 56px)',
-            color: '#1A1A1A',
+            color: '#D4A520',
           }}
         >
           NUESTROS SERVICIOS
@@ -227,7 +226,7 @@ function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           {/* Large card — Venta */}
           <div
-            className="lg:col-span-2 lg:row-span-2 relative overflow-hidden group cursor-pointer rounded-lg"
+            className="lg:col-span-2 lg:row-span-2 relative overflow-hidden group cursor-pointer"
             style={{ minHeight: '360px' }}
           >
             <img
@@ -257,65 +256,61 @@ function ServicesSection() {
           </div>
 
           {/* Medium cards */}
-          {services.slice(1).map((service) => {
-            const isDark = service.accent || service.dark;
-            return (
+          {services.slice(1).map((service) => (
+            <div
+              key={service.id}
+              className="relative overflow-hidden group cursor-pointer"
+              style={{ backgroundColor: service.bg, minHeight: '170px' }}
+            >
+              {service.image && (
+                <>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="absolute inset-0 w-full h-full object-cover opacity-30 transition-opacity duration-300 group-hover:opacity-50"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                </>
+              )}
+              {/* Yellow left border on hover */}
               <div
-                key={service.id}
-                className="relative overflow-hidden group cursor-pointer rounded-lg"
-                style={{ backgroundColor: service.bg, minHeight: '170px' }}
-              >
-                {service.image && (
-                  <>
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="absolute inset-0 w-full h-full object-cover opacity-30 transition-opacity duration-300 group-hover:opacity-50"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                  </>
-                )}
-                {/* Yellow left border on hover */}
-                <div
-                  className="absolute left-0 top-0 bottom-0 w-1 opacity-0 group-hover:opacity-100 transition-opacity"
-                  style={{ backgroundColor: service.accent ? '#FFFFFF' : '#D4A520' }}
-                />
-                <div className="relative p-5 h-full flex flex-col justify-between">
-                  <div>
-                    <h3
-                      className="font-bold mb-2"
-                      style={{
-                        fontFamily: "'Barlow Condensed', sans-serif",
-                        fontSize: '20px',
-                        color: isDark ? '#FFFFFF' : '#1A1A1A',
-                      }}
-                    >
-                      {service.title}
-                    </h3>
-                    <p
-                      className="text-xs leading-relaxed"
-                      style={{
-                        color: isDark ? 'rgba(255,255,255,0.85)' : '#666666',
-                        fontFamily: "'Barlow', sans-serif",
-                      }}
-                    >
-                      {service.desc}
-                    </p>
-                  </div>
-                  {service.brandLogo && (
-                    <div className="mt-3">
-                      <img
-                        src={service.brandLogo}
-                        alt="Continental"
-                        className="w-28 h-auto"
-                        style={{ filter: 'brightness(0) invert(1)', opacity: 0.9, imageRendering: 'auto' }}
-                      />
-                    </div>
-                  )}
+                className="absolute left-0 top-0 bottom-0 w-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                style={{ backgroundColor: service.accent ? '#FFFFFF' : '#D4A520' }}
+              />
+              <div className="relative p-5 h-full flex flex-col justify-between">
+                <div>
+                  <h3
+                    className="font-bold text-white mb-2"
+                    style={{
+                      fontFamily: "'Barlow Condensed', sans-serif",
+                      fontSize: '20px',
+                    }}
+                  >
+                    {service.title}
+                  </h3>
+                  <p
+                    className="text-xs leading-relaxed"
+                    style={{
+                      color: service.accent ? 'rgba(255,255,255,0.85)' : '#AAAAAA',
+                      fontFamily: "'Barlow', sans-serif",
+                    }}
+                  >
+                    {service.desc}
+                  </p>
                 </div>
+                {service.brandLogo && (
+                  <div className="mt-3">
+                    <img
+                      src={service.brandLogo}
+                      alt="Continental"
+                      className="w-28 h-auto"
+                      style={{ filter: 'brightness(0) invert(1)', opacity: 0.9, imageRendering: 'auto' }}
+                    />
+                  </div>
+                )}
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -334,7 +329,7 @@ const equipment = [
 
 function EquipmentSection() {
   return (
-    <section id="maquinaria" className="py-20" style={{ backgroundColor: '#F5F5F5' }}>
+    <section id="maquinaria" className="py-20" style={{ backgroundColor: '#1A1A1A' }}>
       <div className="container mx-auto px-6">
         <div className="flex items-end justify-between mb-10">
           <div>
@@ -349,7 +344,7 @@ function EquipmentSection() {
               style={{
                 fontFamily: "'Barlow Condensed', sans-serif",
                 fontSize: 'clamp(48px, 7vw, 80px)',
-                color: '#1A1A1A',
+                color: '#F0F0F0',
               }}
             >
               MAQUINARIA
@@ -363,7 +358,7 @@ function EquipmentSection() {
             <div
               key={item.id}
               id={item.id}
-              className="relative flex-shrink-0 overflow-hidden group cursor-pointer rounded-lg shadow-md"
+              className="relative flex-shrink-0 overflow-hidden group cursor-pointer"
               style={{
                 width: '220px',
                 height: '300px',
@@ -400,11 +395,11 @@ function EquipmentSection() {
 // ─── Distributor Section ──────────────────────────────────────────────────────
 function DistributorSection() {
   return (
-    <section className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
+    <section className="py-20" style={{ backgroundColor: '#1A1A1A' }}>
       <div className="container mx-auto px-6">
         <p
           className="text-center text-xs font-bold tracking-widest mb-12 uppercase"
-          style={{ color: '#999999', fontFamily: "'Barlow Condensed', sans-serif" }}
+          style={{ color: '#AAAAAA', fontFamily: "'Barlow Condensed', sans-serif" }}
         >
           DISTRIBUIDOR OFICIAL
         </p>
@@ -415,17 +410,19 @@ function DistributorSection() {
               src="/images/fe26653e2193b6950127ca6daf3b85b7.png"
               alt="HELI Montacargas"
               className="h-16 w-auto object-contain"
+              style={{ filter: 'brightness(1.1)' }}
             />
           </div>
           {/* Divider */}
-          <div className="w-px h-20 bg-gray-200 hidden md:block" />
-          <div className="h-px w-20 bg-gray-200 md:hidden" />
+          <div className="w-px h-20 bg-gray-700 hidden md:block" />
+          <div className="h-px w-20 bg-gray-700 md:hidden" />
           {/* Continental */}
           <div className="flex-1 flex items-center justify-center py-10 px-12">
             <img
               src="/images/b6926639df7484260968f3d73b544969.png"
               alt="Continental"
               className="h-16 w-auto object-contain"
+              style={{ filter: 'brightness(1.1)' }}
             />
           </div>
         </div>
@@ -464,31 +461,31 @@ function CTASection() {
           href="mailto:administracion@kaufmann.mx"
           className="inline-block px-8 py-4 text-base font-bold tracking-wider transition-colors self-start"
           style={{
-            backgroundColor: '#1A1A1A',
-            color: '#FFFFFF',
+            backgroundColor: '#FFFFFF',
+            color: '#D4A520',
             fontFamily: "'Barlow Condensed', sans-serif",
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = '#333333';
+            e.currentTarget.style.backgroundColor = '#F0F0F0';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = '#1A1A1A';
+            e.currentTarget.style.backgroundColor = '#FFFFFF';
           }}
         >
           CONTÁCTANOS
         </a>
       </div>
 
-      {/* Right — Dark */}
+      {/* Right — Dark Yellow */}
       <div
         className="flex-1 px-10 py-16 flex flex-col justify-center gap-6"
-        style={{ backgroundColor: '#1A1A1A' }}
+        style={{ backgroundColor: '#B8900E' }}
       >
         <a
           href="tel:9933570560"
           className="flex items-center gap-4 text-white hover:text-white/80 transition-colors"
         >
-          <Phone size={20} className="flex-shrink-0" style={{ color: '#D4A520' }} />
+          <Phone size={20} className="flex-shrink-0" />
           <span
             className="text-xl font-bold"
             style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
@@ -500,7 +497,7 @@ function CTASection() {
           href="tel:9931187676"
           className="flex items-center gap-4 text-white hover:text-white/80 transition-colors"
         >
-          <Phone size={20} className="flex-shrink-0" style={{ color: '#D4A520' }} />
+          <Phone size={20} className="flex-shrink-0" />
           <span
             className="text-xl font-bold"
             style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
@@ -512,7 +509,7 @@ function CTASection() {
           href="mailto:administracion@kaufmann.mx"
           className="flex items-center gap-4 text-white hover:text-white/80 transition-colors"
         >
-          <Mail size={20} className="flex-shrink-0" style={{ color: '#D4A520' }} />
+          <Mail size={20} className="flex-shrink-0" />
           <span
             className="text-base"
             style={{ fontFamily: "'Barlow', sans-serif" }}
@@ -526,7 +523,7 @@ function CTASection() {
           rel="noopener noreferrer"
           className="flex items-center gap-4 text-white hover:text-white/80 transition-colors"
         >
-          <MessageCircle size={20} className="flex-shrink-0 text-green-500" />
+          <MessageCircle size={20} className="flex-shrink-0" />
           <span
             className="text-base font-semibold"
             style={{ fontFamily: "'Barlow', sans-serif" }}
@@ -540,7 +537,7 @@ function CTASection() {
           rel="noopener noreferrer"
           className="flex items-center gap-4 text-white hover:text-white/80 transition-colors"
         >
-          <Facebook size={20} className="flex-shrink-0" style={{ color: '#D4A520' }} />
+          <Facebook size={20} className="flex-shrink-0" />
           <span
             className="text-base font-semibold"
             style={{ fontFamily: "'Barlow', sans-serif" }}
