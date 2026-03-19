@@ -22,7 +22,7 @@ const productos: Producto[] = [
     nombre: 'Montacargas Combustión 1–2 Ton',
     categoria: 'Montacargas',
     subcategoria: 'Combustión',
-    imagenSlot: 'products/montacargas-combustion',
+    imagenSlot: 'fdffaee57fbe4c127e2bf1edd5b3b4fe.png',
     descripcion: 'Motor a gas LP o gasolina. Ideal para uso en exteriores e interiores.',
     tonelaje: '1 a 2 Ton',
   },
@@ -31,7 +31,7 @@ const productos: Producto[] = [
     nombre: 'Montacargas Combustión 2–4 Ton',
     categoria: 'Montacargas',
     subcategoria: 'Combustión',
-    imagenSlot: 'products/montacargas-combustion',
+    imagenSlot: '1cdfec315ff89662548604511c83bc08.png',
     descripcion: 'Alta capacidad de carga para operaciones industriales exigentes.',
     tonelaje: '2 a 4 Ton',
   },
@@ -40,7 +40,7 @@ const productos: Producto[] = [
     nombre: 'Montacargas Combustión 4–5 Ton',
     categoria: 'Montacargas',
     subcategoria: 'Combustión',
-    imagenSlot: 'products/montacargas-combustion',
+    imagenSlot: '638e1710c874da3ad08c96ef3971bc8b.jpg',
     descripcion: 'Potencia y durabilidad para cargas pesadas en almacenes y patios.',
     tonelaje: '4 a 5 Ton',
   },
@@ -49,7 +49,7 @@ const productos: Producto[] = [
     nombre: 'Montacargas Combustión 5–10 Ton',
     categoria: 'Montacargas',
     subcategoria: 'Combustión',
-    imagenSlot: 'products/montacargas-combustion',
+    imagenSlot: '02c814c51c4944e77b14aad0f3f2952b.png',
     descripcion: 'Diseñado para operaciones de gran escala con máxima eficiencia.',
     tonelaje: '5 a 10 Ton',
   },
@@ -58,7 +58,7 @@ const productos: Producto[] = [
     nombre: 'Montacargas Combustión 12–18 Ton',
     categoria: 'Montacargas',
     subcategoria: 'Combustión',
-    imagenSlot: 'products/montacargas-combustion',
+    imagenSlot: '00f8ba6170411503a03088a2f163e8ce.png',
     descripcion: 'Equipo pesado para industria portuaria, siderúrgica y construcción.',
     tonelaje: '12 a 18 Ton',
   },
@@ -68,7 +68,7 @@ const productos: Producto[] = [
     nombre: 'Montacargas Eléctrico 0.8–3.8 Ton',
     categoria: 'Montacargas',
     subcategoria: 'Eléctrico',
-    imagenSlot: 'products/montacargas-electrico',
+    imagenSlot: '027c68e2c259e8524efbfeaf92067bb8.png',
     descripcion: 'Cero emisiones, silencioso. Perfecto para interiores y zonas de alimentos.',
     tonelaje: '0.8 a 3.8 Ton',
   },
@@ -77,7 +77,7 @@ const productos: Producto[] = [
     nombre: 'Montacargas Eléctrico 4–5 Ton',
     categoria: 'Montacargas',
     subcategoria: 'Eléctrico',
-    imagenSlot: 'products/montacargas-electrico',
+    imagenSlot: '71676ec820f6ebd74a87e8e703ad274c.png',
     descripcion: 'Alta capacidad eléctrica con batería de larga duración.',
     tonelaje: '4 a 5 Ton',
   },
@@ -86,7 +86,7 @@ const productos: Producto[] = [
     nombre: 'Montacargas Eléctrico 6–10 Ton',
     categoria: 'Montacargas',
     subcategoria: 'Eléctrico',
-    imagenSlot: 'products/montacargas-electrico',
+    imagenSlot: '2b890759cacd8a9fec22b7ab08bf2685.png',
     descripcion: 'Potencia eléctrica para cargas pesadas sin emisiones contaminantes.',
     tonelaje: '6 a 10 Ton',
   },
@@ -96,7 +96,7 @@ const productos: Producto[] = [
     nombre: 'Apilador Eléctrico Litio 0.6 Ton',
     categoria: 'Apiladores',
     subcategoria: 'Eléctrico',
-    imagenSlot: 'products/apilador-electrico',
+    imagenSlot: 'c1d5dd124a0677046a19b2731f0a20bb.png',
     descripcion: 'Compacto y ágil. Batería de litio de carga rápida para almacenes pequeños.',
     tonelaje: '0.6 Ton',
   },
@@ -105,7 +105,7 @@ const productos: Producto[] = [
     nombre: 'Apilador Eléctrico Litio 1 Ton',
     categoria: 'Apiladores',
     subcategoria: 'Eléctrico',
-    imagenSlot: 'products/apilador-electrico',
+    imagenSlot: '00fa82a8b950b68ec5a28f5085fd051f.png',
     descripcion: 'Operador a pie. Ideal para pasillos estrechos y almacenes medianos.',
     tonelaje: '1 Ton',
   },
@@ -114,7 +114,7 @@ const productos: Producto[] = [
     nombre: 'Apilador Eléctrico Litio 1.4 Ton',
     categoria: 'Apiladores',
     subcategoria: 'Eléctrico',
-    imagenSlot: 'products/apilador-electrico',
+    imagenSlot: '713302c4fb35174b4f4457c4ee9adb90.png',
     descripcion: 'Reach sencillo para mayor alcance en racks de almacenamiento.',
     tonelaje: '1.4 Ton',
   },
@@ -123,7 +123,7 @@ const productos: Producto[] = [
     nombre: 'Apilador Operador a Bordo 1.6 Ton',
     categoria: 'Apiladores',
     subcategoria: 'Operador a Bordo',
-    imagenSlot: 'products/apilador-electrico',
+    imagenSlot: '9812531e7636bbf0e982abd4d034837c.png',
     descripcion: 'Mayor productividad con operador a bordo. Batería de litio incluida.',
     tonelaje: '1.6 Ton',
   },
@@ -132,7 +132,7 @@ const productos: Producto[] = [
     nombre: 'Apilador Contrabalanceado 2 Ton',
     categoria: 'Apiladores',
     subcategoria: 'Operador a Bordo',
-    imagenSlot: 'products/apilador-electrico',
+    imagenSlot: '019eb6c0751bcc885764d1e480711643.png',
     descripcion: 'Diseño contrabalanceado para mayor estabilidad en cargas pesadas.',
     tonelaje: '2 Ton',
   },
@@ -141,7 +141,7 @@ const productos: Producto[] = [
     id: 'exc-1',
     nombre: 'Mini Excavadora VTW-12S',
     categoria: 'Mini Excavadora',
-    imagenSlot: 'products/mini-excavadora',
+    imagenSlot: 'ebd26e5df8b6a86d803843c8671c1cd2.jpg',
     descripcion: 'Motor Kubota. Compacta y potente para trabajos en espacios reducidos.',
     tonelaje: '1.2 Ton',
   },
@@ -149,7 +149,7 @@ const productos: Producto[] = [
     id: 'exc-2',
     nombre: 'Mini Excavadora VTW-20S',
     categoria: 'Mini Excavadora',
-    imagenSlot: 'products/mini-excavadora',
+    imagenSlot: 'ebd26e5df8b6a86d803843c8671c1cd2.jpg',
     descripcion: 'Ideal para excavaciones, demoliciones y trabajos de construcción ligera.',
     tonelaje: '2 Ton',
   },
@@ -157,7 +157,7 @@ const productos: Producto[] = [
     id: 'exc-3',
     nombre: 'Mini Excavadora VTW-30S',
     categoria: 'Mini Excavadora',
-    imagenSlot: 'products/mini-excavadora',
+    imagenSlot: 'ebd26e5df8b6a86d803843c8671c1cd2.jpg',
     descripcion: 'Mayor potencia de excavación con cabina ergonómica y bajo consumo.',
     tonelaje: '3 Ton',
   },
@@ -166,14 +166,14 @@ const productos: Producto[] = [
     id: 'plat-1',
     nombre: 'Plataforma Elevadora Eléctrica',
     categoria: 'Plataforma Elevadora',
-    imagenSlot: 'products/plataforma-elevadora',
+    imagenSlot: 'ebd26e5df8b6a86d803843c8671c1cd2.jpg',
     descripcion: 'Elevación segura de personas y materiales. Operación silenciosa y limpia.',
   },
   {
     id: 'plat-2',
     nombre: 'Plataforma Elevadora Tijera',
     categoria: 'Plataforma Elevadora',
-    imagenSlot: 'products/plataforma-elevadora',
+    imagenSlot: 'ebd26e5df8b6a86d803843c8671c1cd2.jpg',
     descripcion: 'Plataforma tipo tijera para trabajos en altura con gran superficie de trabajo.',
   },
   // Patín Eléctrico
@@ -181,14 +181,14 @@ const productos: Producto[] = [
     id: 'pe-1',
     nombre: 'Patín Eléctrico 1.5 Ton',
     categoria: 'Patín Eléctrico',
-    imagenSlot: 'products/patin-electrico',
+    imagenSlot: '663b1b2c7bd13e1072dfde0da182dd4f.jpg',
     descripcion: 'Transporte motorizado de pallets. Reduce el esfuerzo físico del operador.',
   },
   {
     id: 'pe-2',
     nombre: 'Patín Eléctrico 2 Ton',
     categoria: 'Patín Eléctrico',
-    imagenSlot: 'products/patin-electrico',
+    imagenSlot: '06b077bef323ff0c8a2ddcbd363cc6de.png',
     descripcion: 'Mayor capacidad para almacenes de alto volumen. Batería de larga duración.',
   },
   // Patín Hidráulico
@@ -196,14 +196,14 @@ const productos: Producto[] = [
     id: 'ph-1',
     nombre: 'Patín Hidráulico 2.5 Ton',
     categoria: 'Patín Hidráulico',
-    imagenSlot: 'products/patin-hidraulico',
+    imagenSlot: 'bb9a1f26f76ef3fe33bd5da77e048829.jpg',
     descripcion: 'Resistente y confiable. El clásico para mover pallets en cualquier almacén.',
   },
   {
     id: 'ph-2',
     nombre: 'Patín Hidráulico 3 Ton',
     categoria: 'Patín Hidráulico',
-    imagenSlot: 'products/patin-hidraulico',
+    imagenSlot: 'fa75392207fa70c2cea138461f37bd4a.jpg',
     descripcion: 'Alta capacidad de carga con mecanismo hidráulico de fácil operación.',
   },
 ];
@@ -253,13 +253,13 @@ export default function MaquinariaPage() {
       {/* Hero */}
       <section
         className="relative py-16 md:py-24 overflow-hidden"
-        style={{ backgroundColor: '#111111' }}
+        style={{ backgroundColor: '#1A1A1A' }}
       >
         <div
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              'repeating-linear-gradient(0deg, transparent, transparent 40px, #CC0000 40px, #CC0000 41px)',
+              'repeating-linear-gradient(0deg, transparent, transparent 40px, #D4A520 40px, #D4A520 41px)',
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -271,10 +271,10 @@ export default function MaquinariaPage() {
             >
               INICIO
             </Link>
-            <ChevronRight size={14} className="text-gray-600" />
+            <ChevronRight size={14} className="text-gray-500" />
             <span
               className="text-sm font-bold"
-              style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
+              style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               MAQUINARIA
             </span>
@@ -285,10 +285,10 @@ export default function MaquinariaPage() {
           >
             CATÁLOGO DE
             <br />
-            <span style={{ color: '#CC0000' }}>MAQUINARIA</span>
+            <span style={{ color: '#D4A520' }}>MAQUINARIA</span>
           </h1>
           <p
-            className="mt-4 text-lg text-gray-400 max-w-xl"
+            className="mt-4 text-lg text-gray-300 max-w-xl"
             style={{ fontFamily: "'Barlow', sans-serif" }}
           >
             Equipos industriales de las mejores marcas. Venta y renta con soporte técnico
@@ -298,18 +298,18 @@ export default function MaquinariaPage() {
       </section>
 
       {/* Contenido principal */}
-      <section className="py-10" style={{ backgroundColor: '#1A1A1A' }}>
+      <section className="py-10" style={{ backgroundColor: '#F5F5F5' }}>
         <div className="container mx-auto px-4">
           <div className="flex gap-8">
             {/* Sidebar filtros — desktop */}
             <aside className="hidden lg:block w-56 flex-shrink-0">
               <div
-                className="sticky top-24 rounded-sm overflow-hidden"
-                style={{ backgroundColor: '#111111' }}
+                className="sticky top-24 rounded-lg overflow-hidden shadow-md"
+                style={{ backgroundColor: '#FFFFFF' }}
               >
                 <div
                   className="px-4 py-3 flex items-center gap-2"
-                  style={{ backgroundColor: '#CC0000' }}
+                  style={{ backgroundColor: '#D4A520' }}
                 >
                   <Filter size={14} className="text-white" />
                   <span
@@ -327,9 +327,9 @@ export default function MaquinariaPage() {
                       className="w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors"
                       style={{
                         fontFamily: "'Barlow Condensed', sans-serif",
-                        color: categoriaActiva === cat ? '#ffffff' : '#9ca3af',
+                        color: categoriaActiva === cat ? '#FFFFFF' : '#555555',
                         backgroundColor:
-                          categoriaActiva === cat ? '#CC0000' : 'transparent',
+                          categoriaActiva === cat ? '#D4A520' : 'transparent',
                       }}
                     >
                       {cat.toUpperCase()}
@@ -339,10 +339,10 @@ export default function MaquinariaPage() {
 
                 {/* Subcategorías */}
                 {subcategorias.length > 0 && (
-                  <div className="border-t border-gray-800 py-2">
+                  <div className="border-t border-gray-200 py-2">
                     <div className="px-4 py-2">
                       <span
-                        className="text-xs font-bold text-gray-500 tracking-widest"
+                        className="text-xs font-bold text-gray-400 tracking-widest"
                         style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                       >
                         TIPO
@@ -357,14 +357,14 @@ export default function MaquinariaPage() {
                         className="w-full text-left px-4 py-2 text-sm font-semibold transition-colors flex items-center gap-2"
                         style={{
                           fontFamily: "'Barlow Condensed', sans-serif",
-                          color: subcategoriaActiva === sub ? '#CC0000' : '#9ca3af',
+                          color: subcategoriaActiva === sub ? '#D4A520' : '#777777',
                         }}
                       >
                         <span
                           className="w-1.5 h-1.5 rounded-full flex-shrink-0"
                           style={{
                             backgroundColor:
-                              subcategoriaActiva === sub ? '#CC0000' : '#4b5563',
+                              subcategoriaActiva === sub ? '#D4A520' : '#CBD5E1',
                           }}
                         />
                         {sub.toUpperCase()}
@@ -381,9 +381,9 @@ export default function MaquinariaPage() {
               <div className="lg:hidden mb-4">
                 <button
                   onClick={() => setFiltroMovilAbierto(!filtroMovilAbierto)}
-                  className="flex items-center gap-2 px-4 py-2.5 text-sm font-bold text-white"
+                  className="flex items-center gap-2 px-4 py-2.5 text-sm font-bold text-white rounded-lg"
                   style={{
-                    backgroundColor: '#CC0000',
+                    backgroundColor: '#D4A520',
                     fontFamily: "'Barlow Condensed', sans-serif",
                   }}
                 >
@@ -393,17 +393,17 @@ export default function MaquinariaPage() {
                 </button>
                 {filtroMovilAbierto && (
                   <div
-                    className="mt-1 rounded-sm overflow-hidden"
-                    style={{ backgroundColor: '#111111' }}
+                    className="mt-1 rounded-lg overflow-hidden shadow-md"
+                    style={{ backgroundColor: '#FFFFFF' }}
                   >
                     {categorias.map((cat) => (
                       <button
                         key={cat}
                         onClick={() => handleCategoria(cat)}
-                        className="w-full text-left px-4 py-3 text-sm font-semibold border-b border-gray-800 transition-colors"
+                        className="w-full text-left px-4 py-3 text-sm font-semibold border-b border-gray-100 transition-colors"
                         style={{
                           fontFamily: "'Barlow Condensed', sans-serif",
-                          color: categoriaActiva === cat ? '#CC0000' : '#9ca3af',
+                          color: categoriaActiva === cat ? '#D4A520' : '#555555',
                         }}
                       >
                         {cat.toUpperCase()}
@@ -417,7 +417,7 @@ export default function MaquinariaPage() {
               <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
                 <div className="flex items-center gap-3 flex-wrap">
                   <span
-                    className="text-sm text-gray-400"
+                    className="text-sm text-gray-500"
                     style={{ fontFamily: "'Barlow', sans-serif" }}
                   >
                     {productosFiltrados.length} equipos encontrados
@@ -430,15 +430,15 @@ export default function MaquinariaPage() {
                           onClick={() =>
                             setSubcategoriaActiva(subcategoriaActiva === sub ? '' : sub)
                           }
-                          className="px-3 py-1 text-xs font-bold border transition-colors"
+                          className="px-3 py-1 text-xs font-bold border rounded transition-colors"
                           style={{
                             fontFamily: "'Barlow Condensed', sans-serif",
                             borderColor:
-                              subcategoriaActiva === sub ? '#CC0000' : '#374151',
-                            color: subcategoriaActiva === sub ? '#CC0000' : '#9ca3af',
+                              subcategoriaActiva === sub ? '#D4A520' : '#D1D5DB',
+                            color: subcategoriaActiva === sub ? '#D4A520' : '#777777',
                             backgroundColor:
                               subcategoriaActiva === sub
-                                ? 'rgba(204,0,0,0.1)'
+                                ? 'rgba(212,165,32,0.1)'
                                 : 'transparent',
                           }}
                         >
@@ -452,7 +452,7 @@ export default function MaquinariaPage() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 text-xs font-bold text-white transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 text-xs font-bold text-white rounded transition-colors"
                   style={{
                     backgroundColor: '#25D366',
                     fontFamily: "'Barlow Condensed', sans-serif",
@@ -464,7 +464,7 @@ export default function MaquinariaPage() {
               </div>
 
               {/* Grid de productos */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
                 {productosFiltrados.map((producto) => (
                   <ProductoCard key={producto.id} producto={producto} />
                 ))}
@@ -473,7 +473,7 @@ export default function MaquinariaPage() {
               {productosFiltrados.length === 0 && (
                 <div className="text-center py-20">
                   <p
-                    className="text-gray-500 text-lg"
+                    className="text-gray-400 text-lg"
                     style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                   >
                     No se encontraron equipos en esta categoría.
@@ -486,7 +486,7 @@ export default function MaquinariaPage() {
       </section>
 
       {/* CTA inferior */}
-      <section className="py-16" style={{ backgroundColor: '#CC0000' }}>
+      <section className="py-16" style={{ backgroundColor: '#D4A520' }}>
         <div className="container mx-auto px-4 text-center">
           <h2
             className="text-4xl md:text-5xl font-black text-white uppercase mb-4"
@@ -504,9 +504,9 @@ export default function MaquinariaPage() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 text-base font-bold text-white transition-colors"
+            className="inline-flex items-center gap-3 px-8 py-4 text-base font-bold text-white transition-colors rounded-lg"
             style={{
-              backgroundColor: '#111111',
+              backgroundColor: '#1A1A1A',
               fontFamily: "'Barlow Condensed', sans-serif",
             }}
           >
@@ -522,21 +522,21 @@ export default function MaquinariaPage() {
 function ProductoCard({ producto }: { producto: Producto }) {
   return (
     <div
-      className="group flex flex-col overflow-hidden transition-transform hover:-translate-y-1"
-      style={{ backgroundColor: '#111111' }}
+      className="group flex flex-col overflow-hidden rounded-lg shadow-md transition-transform hover:-translate-y-1 hover:shadow-lg"
+      style={{ backgroundColor: '#FFFFFF' }}
     >
-      {/* Imagen — cada producto usa su propio slot */}
-      <div className="relative overflow-hidden aspect-[4/3] bg-gray-900">
+      {/* Imagen */}
+      <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
         <img
-          src={`/airo-assets/images/${producto.imagenSlot}`}
+          src={`/images/${producto.imagenSlot}`}
           alt={producto.nombre}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {producto.subcategoria && (
           <span
-            className="absolute top-3 left-3 px-2 py-1 text-xs font-bold text-white"
+            className="absolute top-3 left-3 px-2 py-1 text-xs font-bold text-white rounded"
             style={{
-              backgroundColor: '#CC0000',
+              backgroundColor: '#D4A520',
               fontFamily: "'Barlow Condensed', sans-serif",
             }}
           >
@@ -545,9 +545,9 @@ function ProductoCard({ producto }: { producto: Producto }) {
         )}
         {producto.tonelaje && (
           <span
-            className="absolute top-3 right-3 px-2 py-1 text-xs font-bold text-white"
+            className="absolute top-3 right-3 px-2 py-1 text-xs font-bold text-white rounded"
             style={{
-              backgroundColor: 'rgba(0,0,0,0.7)',
+              backgroundColor: 'rgba(26,26,26,0.75)',
               fontFamily: "'Barlow Condensed', sans-serif",
             }}
           >
@@ -560,19 +560,19 @@ function ProductoCard({ producto }: { producto: Producto }) {
       <div className="flex flex-col flex-1 p-4">
         <span
           className="text-xs font-bold mb-1"
-          style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
+          style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
         >
           {producto.categoria.toUpperCase()}
         </span>
         <h3
-          className="text-base font-bold text-white mb-2 leading-tight"
-          style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+          className="text-base font-bold mb-2 leading-tight"
+          style={{ color: '#1A1A1A', fontFamily: "'Barlow Condensed', sans-serif" }}
         >
           {producto.nombre}
         </h3>
         <p
-          className="text-sm text-gray-400 flex-1 mb-4"
-          style={{ fontFamily: "'Barlow', sans-serif" }}
+          className="text-sm flex-1 mb-4"
+          style={{ color: '#666666', fontFamily: "'Barlow', sans-serif" }}
         >
           {producto.descripcion}
         </p>
@@ -580,13 +580,13 @@ function ProductoCard({ producto }: { producto: Producto }) {
           href={`https://api.whatsapp.com/send/?phone=5219931187676&text=Hola, me interesa el ${encodeURIComponent(producto.nombre)}&type=phone_number&app_absent=0`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 py-2.5 text-sm font-bold text-white transition-colors"
+          className="flex items-center justify-center gap-2 py-2.5 text-sm font-bold text-white rounded transition-colors"
           style={{
-            backgroundColor: '#CC0000',
+            backgroundColor: '#D4A520',
             fontFamily: "'Barlow Condensed', sans-serif",
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E60000')}
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#CC0000')}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C49518')}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4A520')}
         >
           <MessageCircle size={14} />
           SOLICITAR INFORMACIÓN
