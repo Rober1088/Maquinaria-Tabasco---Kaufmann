@@ -41,7 +41,7 @@ function HeroSection() {
           <div className="lg:col-span-3">
             <p
               className="text-xs font-bold tracking-widest mb-4 uppercase"
-              style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
+              style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               ▪ DISTRIBUIDOR OFICIAL
             </p>
@@ -56,7 +56,7 @@ function HeroSection() {
             >
               MAQUINARIA
               <br />
-              <span style={{ color: '#CC0000' }}>TABASCO</span>
+              <span style={{ color: '#D4A520' }}>TABASCO</span>
             </h1>
             <h2
               className="font-bold mb-6"
@@ -79,11 +79,11 @@ function HeroSection() {
                 href="/#contacto"
                 className="inline-block px-8 py-4 text-base font-bold tracking-wider text-white transition-colors"
                 style={{
-                  backgroundColor: '#CC0000',
+                  backgroundColor: '#D4A520',
                   fontFamily: "'Barlow Condensed', sans-serif",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E60000')}
-                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#CC0000')}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C49518')}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4A520')}
               >
                 CONTÁCTANOS
               </a>
@@ -117,8 +117,8 @@ function HeroSection() {
                 />
               </div>
             </div>
-            {/* Red accent bar */}
-            <div className="h-1 w-full" style={{ backgroundColor: '#CC0000' }} />
+            {/* Yellow accent bar */}
+            <div className="h-1 w-full" style={{ backgroundColor: '#D4A520' }} />
           </div>
         </div>
       </div>
@@ -158,7 +158,7 @@ const services = [
     desc: 'Amplio catálogo de montacargas, excavadoras y más equipos industriales nuevos y usados.',
     image: '/airo-assets/images/services/venta-maquinaria',
     large: true,
-    bg: '#1E1E1E',
+    bg: '#1A1A1A',
   },
   {
     id: 'renta',
@@ -166,7 +166,7 @@ const services = [
     desc: 'Renta flexible por día, semana o mes. Equipos listos para operar.',
     image: '/airo-assets/images/services/renta-maquinaria',
     large: false,
-    bg: '#2E2E2E',
+    bg: '#1A1A1A',
   },
   {
     id: 'mantenimiento',
@@ -174,14 +174,14 @@ const services = [
     desc: 'Programas preventivos y correctivos para maximizar la vida útil de tu equipo.',
     image: '/airo-assets/images/services/mantenimiento',
     large: false,
-    bg: '#252525',
+    bg: '#1A1A1A',
   },
   {
     id: 'reparacion',
     title: 'REPARACIÓN',
     desc: 'Diagnóstico y reparación especializada con técnicos certificados.',
     large: false,
-    bg: '#CC0000',
+    bg: '#D4A520',
     accent: true,
   },
   {
@@ -196,18 +196,18 @@ const services = [
     title: 'LLANTAS SÓLIDAS',
     desc: 'Distribuidor oficial Continental. Llantas de alta resistencia para montacargas.',
     large: false,
-    bg: '#2E2E2E',
+    bg: '#1A1A1A',
     brandLogo: '/images/b6926639df7484260968f3d73b544969.png',
   },
 ];
 
 function ServicesSection() {
   return (
-    <section id="servicios" className="py-20" style={{ backgroundColor: '#111111' }}>
+    <section id="servicios" className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container mx-auto px-6">
         <p
           className="text-xs font-bold tracking-widest mb-2"
-          style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
+          style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
         >
           ▪ LO QUE HACEMOS
         </p>
@@ -216,7 +216,7 @@ function ServicesSection() {
           style={{
             fontFamily: "'Barlow Condensed', sans-serif",
             fontSize: 'clamp(36px, 5vw, 56px)',
-            color: '#CC0000',
+            color: '#1A1A1A',
           }}
         >
           NUESTROS SERVICIOS
@@ -226,8 +226,8 @@ function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           {/* Large card — Venta */}
           <div
-            className="lg:col-span-2 lg:row-span-2 relative overflow-hidden group cursor-pointer"
-            style={{ minHeight: '360px' }}
+            className="lg:col-span-2 lg:row-span-2 relative overflow-hidden group cursor-pointer rounded-lg"
+            style={{ minHeight: '360px', backgroundColor: '#1A1A1A' }}
           >
             <img
               src={services[0].image}
@@ -237,7 +237,7 @@ function ServicesSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
             <div
               className="absolute left-0 top-0 bottom-0 w-1 opacity-0 group-hover:opacity-100 transition-opacity"
-              style={{ backgroundColor: '#CC0000' }}
+              style={{ backgroundColor: '#D4A520' }}
             />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <h3
@@ -259,7 +259,7 @@ function ServicesSection() {
           {services.slice(1).map((service) => (
             <div
               key={service.id}
-              className="relative overflow-hidden group cursor-pointer"
+              className="relative overflow-hidden group cursor-pointer rounded-lg"
               style={{ backgroundColor: service.bg, minHeight: '170px' }}
             >
               {service.image && (
@@ -267,15 +267,16 @@ function ServicesSection() {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="absolute inset-0 w-full h-full object-cover opacity-30 transition-opacity duration-300 group-hover:opacity-50"
+                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-80"
+                    style={{ opacity: 0.7 }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
                 </>
               )}
-              {/* Red left border on hover */}
+              {/* Yellow left border on hover */}
               <div
                 className="absolute left-0 top-0 bottom-0 w-1 opacity-0 group-hover:opacity-100 transition-opacity"
-                style={{ backgroundColor: service.accent ? '#FFFFFF' : '#CC0000' }}
+                style={{ backgroundColor: service.accent ? '#FFFFFF' : '#D4A520' }}
               />
               <div className="relative p-5 h-full flex flex-col justify-between">
                 <div>
@@ -284,6 +285,7 @@ function ServicesSection() {
                     style={{
                       fontFamily: "'Barlow Condensed', sans-serif",
                       fontSize: '20px',
+                      textShadow: '0 1px 3px rgba(0,0,0,0.5)',
                     }}
                   >
                     {service.title}
@@ -291,8 +293,9 @@ function ServicesSection() {
                   <p
                     className="text-xs leading-relaxed"
                     style={{
-                      color: service.accent ? 'rgba(255,255,255,0.85)' : '#AAAAAA',
+                      color: service.accent ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.8)',
                       fontFamily: "'Barlow', sans-serif",
+                      textShadow: '0 1px 2px rgba(0,0,0,0.4)',
                     }}
                   >
                     {service.desc}
@@ -329,13 +332,13 @@ const equipment = [
 
 function EquipmentSection() {
   return (
-    <section id="maquinaria" className="py-20" style={{ backgroundColor: '#1A1A1A' }}>
+    <section id="maquinaria" className="py-20" style={{ backgroundColor: '#F5F5F5' }}>
       <div className="container mx-auto px-6">
         <div className="flex items-end justify-between mb-10">
           <div>
             <p
               className="text-xs font-bold tracking-widest mb-2"
-              style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
+              style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               ▪ CATÁLOGO
             </p>
@@ -344,7 +347,7 @@ function EquipmentSection() {
               style={{
                 fontFamily: "'Barlow Condensed', sans-serif",
                 fontSize: 'clamp(48px, 7vw, 80px)',
-                color: '#F0F0F0',
+                color: '#1A1A1A',
               }}
             >
               MAQUINARIA
@@ -358,7 +361,7 @@ function EquipmentSection() {
             <div
               key={item.id}
               id={item.id}
-              className="relative flex-shrink-0 overflow-hidden group cursor-pointer"
+              className="relative flex-shrink-0 overflow-hidden group cursor-pointer rounded-lg"
               style={{
                 width: '220px',
                 height: '300px',
@@ -371,10 +374,10 @@ function EquipmentSection() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-              {/* Red bottom border on hover */}
+              {/* Yellow bottom border on hover */}
               <div
                 className="absolute bottom-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity"
-                style={{ backgroundColor: '#CC0000' }}
+                style={{ backgroundColor: '#D4A520' }}
               />
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <h3
@@ -395,11 +398,11 @@ function EquipmentSection() {
 // ─── Distributor Section ──────────────────────────────────────────────────────
 function DistributorSection() {
   return (
-    <section className="py-20" style={{ backgroundColor: '#1A1A1A' }}>
+    <section className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container mx-auto px-6">
         <p
           className="text-center text-xs font-bold tracking-widest mb-12 uppercase"
-          style={{ color: '#AAAAAA', fontFamily: "'Barlow Condensed', sans-serif" }}
+          style={{ color: '#999999', fontFamily: "'Barlow Condensed', sans-serif" }}
         >
           DISTRIBUIDOR OFICIAL
         </p>
@@ -410,19 +413,17 @@ function DistributorSection() {
               src="/images/fe26653e2193b6950127ca6daf3b85b7.png"
               alt="HELI Montacargas"
               className="h-16 w-auto object-contain"
-              style={{ filter: 'brightness(1.1)' }}
             />
           </div>
           {/* Divider */}
-          <div className="w-px h-20 bg-gray-700 hidden md:block" />
-          <div className="h-px w-20 bg-gray-700 md:hidden" />
+          <div className="w-px h-20 bg-gray-300 hidden md:block" />
+          <div className="h-px w-20 bg-gray-300 md:hidden" />
           {/* Continental */}
           <div className="flex-1 flex items-center justify-center py-10 px-12">
             <img
               src="/images/b6926639df7484260968f3d73b544969.png"
               alt="Continental"
               className="h-16 w-auto object-contain"
-              style={{ filter: 'brightness(1.1)' }}
             />
           </div>
         </div>
@@ -435,10 +436,10 @@ function DistributorSection() {
 function CTASection() {
   return (
     <section id="contacto" className="flex flex-col md:flex-row">
-      {/* Left — Red */}
+      {/* Left — Yellow */}
       <div
         className="flex-1 px-10 py-16 flex flex-col justify-center"
-        style={{ backgroundColor: '#CC0000' }}
+        style={{ backgroundColor: '#D4A520' }}
       >
         <h2
           className="font-black text-white mb-4 leading-none"
@@ -462,7 +463,7 @@ function CTASection() {
           className="inline-block px-8 py-4 text-base font-bold tracking-wider transition-colors self-start"
           style={{
             backgroundColor: '#FFFFFF',
-            color: '#CC0000',
+            color: '#D4A520',
             fontFamily: "'Barlow Condensed', sans-serif",
           }}
           onMouseEnter={(e) => {
@@ -476,10 +477,10 @@ function CTASection() {
         </a>
       </div>
 
-      {/* Right — Dark Red */}
+      {/* Right — Dark Yellow */}
       <div
         className="flex-1 px-10 py-16 flex flex-col justify-center gap-6"
-        style={{ backgroundColor: '#B22222' }}
+        style={{ backgroundColor: '#B8900E' }}
       >
         <a
           href="tel:9933570560"

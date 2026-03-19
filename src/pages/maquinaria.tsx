@@ -259,7 +259,7 @@ export default function MaquinariaPage() {
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              'repeating-linear-gradient(0deg, transparent, transparent 40px, #CC0000 40px, #CC0000 41px)',
+              'repeating-linear-gradient(0deg, transparent, transparent 40px, #D4A520 40px, #D4A520 41px)',
           }}
         />
         <div className="container mx-auto px-4 relative z-10">
@@ -274,7 +274,7 @@ export default function MaquinariaPage() {
             <ChevronRight size={14} className="text-gray-600" />
             <span
               className="text-sm font-bold"
-              style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
+              style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               MAQUINARIA
             </span>
@@ -285,7 +285,7 @@ export default function MaquinariaPage() {
           >
             CATÁLOGO DE
             <br />
-            <span style={{ color: '#CC0000' }}>MAQUINARIA</span>
+            <span style={{ color: '#D4A520' }}>MAQUINARIA</span>
           </h1>
           <p
             className="mt-4 text-lg text-gray-400 max-w-xl"
@@ -309,7 +309,7 @@ export default function MaquinariaPage() {
               >
                 <div
                   className="px-4 py-3 flex items-center gap-2"
-                  style={{ backgroundColor: '#CC0000' }}
+                  style={{ backgroundColor: '#D4A520' }}
                 >
                   <Filter size={14} className="text-white" />
                   <span
@@ -329,7 +329,7 @@ export default function MaquinariaPage() {
                         fontFamily: "'Barlow Condensed', sans-serif",
                         color: categoriaActiva === cat ? '#ffffff' : '#9ca3af',
                         backgroundColor:
-                          categoriaActiva === cat ? '#CC0000' : 'transparent',
+                          categoriaActiva === cat ? '#D4A520' : 'transparent',
                       }}
                     >
                       {cat.toUpperCase()}
@@ -357,14 +357,14 @@ export default function MaquinariaPage() {
                         className="w-full text-left px-4 py-2 text-sm font-semibold transition-colors flex items-center gap-2"
                         style={{
                           fontFamily: "'Barlow Condensed', sans-serif",
-                          color: subcategoriaActiva === sub ? '#CC0000' : '#9ca3af',
+                          color: subcategoriaActiva === sub ? '#D4A520' : '#9ca3af',
                         }}
                       >
                         <span
                           className="w-1.5 h-1.5 rounded-full flex-shrink-0"
                           style={{
                             backgroundColor:
-                              subcategoriaActiva === sub ? '#CC0000' : '#4b5563',
+                              subcategoriaActiva === sub ? '#D4A520' : '#4b5563',
                           }}
                         />
                         {sub.toUpperCase()}
@@ -383,7 +383,7 @@ export default function MaquinariaPage() {
                   onClick={() => setFiltroMovilAbierto(!filtroMovilAbierto)}
                   className="flex items-center gap-2 px-4 py-2.5 text-sm font-bold text-white"
                   style={{
-                    backgroundColor: '#CC0000',
+                    backgroundColor: '#D4A520',
                     fontFamily: "'Barlow Condensed', sans-serif",
                   }}
                 >
@@ -403,7 +403,7 @@ export default function MaquinariaPage() {
                         className="w-full text-left px-4 py-3 text-sm font-semibold border-b border-gray-800 transition-colors"
                         style={{
                           fontFamily: "'Barlow Condensed', sans-serif",
-                          color: categoriaActiva === cat ? '#CC0000' : '#9ca3af',
+                          color: categoriaActiva === cat ? '#D4A520' : '#9ca3af',
                         }}
                       >
                         {cat.toUpperCase()}
@@ -434,11 +434,11 @@ export default function MaquinariaPage() {
                           style={{
                             fontFamily: "'Barlow Condensed', sans-serif",
                             borderColor:
-                              subcategoriaActiva === sub ? '#CC0000' : '#374151',
-                            color: subcategoriaActiva === sub ? '#CC0000' : '#9ca3af',
+                              subcategoriaActiva === sub ? '#D4A520' : '#374151',
+                            color: subcategoriaActiva === sub ? '#D4A520' : '#9ca3af',
                             backgroundColor:
                               subcategoriaActiva === sub
-                                ? 'rgba(204,0,0,0.1)'
+                                ? 'rgba(212,165,32,0.15)'
                                 : 'transparent',
                           }}
                         >
@@ -486,7 +486,7 @@ export default function MaquinariaPage() {
       </section>
 
       {/* CTA inferior */}
-      <section className="py-16" style={{ backgroundColor: '#CC0000' }}>
+      <section className="py-16" style={{ backgroundColor: '#D4A520' }}>
         <div className="container mx-auto px-4 text-center">
           <h2
             className="text-4xl md:text-5xl font-black text-white uppercase mb-4"
@@ -536,7 +536,7 @@ function ProductoCard({ producto }: { producto: Producto }) {
           <span
             className="absolute top-3 left-3 px-2 py-1 text-xs font-bold text-white"
             style={{
-              backgroundColor: '#CC0000',
+              backgroundColor: '#D4A520',
               fontFamily: "'Barlow Condensed', sans-serif",
             }}
           >
@@ -560,7 +560,7 @@ function ProductoCard({ producto }: { producto: Producto }) {
       <div className="flex flex-col flex-1 p-4">
         <span
           className="text-xs font-bold mb-1"
-          style={{ color: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
+          style={{ color: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
         >
           {producto.categoria.toUpperCase()}
         </span>
@@ -582,11 +582,11 @@ function ProductoCard({ producto }: { producto: Producto }) {
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 py-2.5 text-sm font-bold text-white transition-colors"
           style={{
-            backgroundColor: '#CC0000',
+            backgroundColor: '#D4A520',
             fontFamily: "'Barlow Condensed', sans-serif",
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E60000')}
-          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#CC0000')}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C49518')}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4A520')}
         >
           <MessageCircle size={14} />
           SOLICITAR INFORMACIÓN

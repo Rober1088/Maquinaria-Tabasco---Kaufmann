@@ -74,7 +74,7 @@ export default function Header() {
                     <Link
                       key={item.label}
                       to={item.href}
-                      className="block px-4 py-2 text-xs font-semibold text-gray-300 hover:text-white hover:bg-red-700 transition-colors"
+                      className="block px-4 py-2 text-xs font-semibold text-gray-300 hover:text-white hover:bg-yellow-700 transition-colors"
                       style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                       onClick={() => setIsMaquinariaOpen(false)}
                     >
@@ -90,9 +90,9 @@ export default function Header() {
           <a
             href="/#contacto"
             className="hidden xl:block flex-shrink-0 px-4 py-2 text-xs font-bold tracking-widest text-white transition-colors"
-            style={{ backgroundColor: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#E60000')}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#CC0000')}
+            style={{ backgroundColor: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C49518')}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4A520')}
           >
             CONTACTO
           </a>
@@ -151,7 +151,7 @@ export default function Header() {
             <a
               href="/#contacto"
               className="mt-6 text-center py-4 text-lg font-bold tracking-widest text-white"
-              style={{ backgroundColor: '#CC0000', fontFamily: "'Barlow Condensed', sans-serif" }}
+              style={{ backgroundColor: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               CONTACTO
