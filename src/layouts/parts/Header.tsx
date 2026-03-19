@@ -74,12 +74,8 @@ export default function Header() {
                     <Link
                       key={item.label}
                       to={item.href}
-                      className="block px-4 py-2 text-xs font-semibold text-gray-300 hover:text-white transition-colors"
-                      style={{
-                        fontFamily: "'Barlow Condensed', sans-serif",
-                      }}
-                      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#D4A520')}
-                      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
+                      className="block px-4 py-2 text-xs font-semibold text-gray-300 hover:text-white hover:bg-yellow-700 transition-colors"
+                      style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                       onClick={() => setIsMaquinariaOpen(false)}
                     >
                       {item.label}

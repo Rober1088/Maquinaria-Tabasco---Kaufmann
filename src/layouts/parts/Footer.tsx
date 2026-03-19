@@ -75,21 +75,21 @@ export default function Footer() {
                 href="tel:9933570560"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
               >
-                <Phone size={16} className="flex-shrink-0" style={{ color: '#D4A520' }} />
+                <Phone size={16} className="text-yellow-600 flex-shrink-0" />
                 <span style={{ fontFamily: "'Barlow', sans-serif" }}>993 3570560</span>
               </a>
               <a
                 href="tel:9931187676"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
               >
-                <Phone size={16} className="flex-shrink-0" style={{ color: '#D4A520' }} />
+                <Phone size={16} className="text-yellow-600 flex-shrink-0" />
                 <span style={{ fontFamily: "'Barlow', sans-serif" }}>993 1187676</span>
               </a>
               <a
                 href="mailto:administracion@kaufmann.mx"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors"
               >
-                <Mail size={16} className="flex-shrink-0" style={{ color: '#D4A520' }} />
+                <Mail size={16} className="text-yellow-600 flex-shrink-0" />
                 <span style={{ fontFamily: "'Barlow', sans-serif" }}>administracion@kaufmann.mx</span>
               </a>
               <a
