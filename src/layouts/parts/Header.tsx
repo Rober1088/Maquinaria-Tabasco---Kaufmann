@@ -28,10 +28,7 @@ export default function Header() {
   const [isMaquinariaOpen, setIsMaquinariaOpen] = useState(false);
 
   return (
-    <header
-      className="sticky top-0 z-50 shadow-sm"
-      style={{ backgroundColor: '#FFFFFF', borderBottom: '1px solid #E5E7EB' }}
-    >
+    <header className="sticky top-0 z-50" style={{ backgroundColor: '#1A1A1A' }}>
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between gap-4">
           {/* Logo */}
@@ -49,13 +46,8 @@ export default function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-xs font-semibold tracking-wide px-2 py-2 transition-colors whitespace-nowrap"
-                style={{
-                  fontFamily: "'Barlow Condensed', sans-serif",
-                  color: '#555555',
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#D4A520')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#555555')}
+                className="text-xs font-semibold tracking-wide text-gray-300 hover:text-white px-2 py-2 transition-colors whitespace-nowrap"
+                style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
                 {item.label}
               </a>
@@ -66,15 +58,15 @@ export default function Header() {
               <button
                 onMouseEnter={() => setIsMaquinariaOpen(true)}
                 onMouseLeave={() => setIsMaquinariaOpen(false)}
-                className="flex items-center gap-1 text-xs font-semibold tracking-wide px-2 py-2 transition-colors"
-                style={{ fontFamily: "'Barlow Condensed', sans-serif", color: '#555555' }}
+                className="flex items-center gap-1 text-xs font-semibold tracking-wide text-gray-300 hover:text-white px-2 py-2 transition-colors"
+                style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
                 MAQUINARIA <ChevronDown size={14} />
               </button>
               {isMaquinariaOpen && (
                 <div
-                  className="absolute top-full left-0 w-56 py-2 z-50 rounded-lg shadow-lg"
-                  style={{ backgroundColor: '#FFFFFF', border: '1px solid #E5E7EB' }}
+                  className="absolute top-full left-0 w-56 py-2 z-50"
+                  style={{ backgroundColor: '#111111' }}
                   onMouseEnter={() => setIsMaquinariaOpen(true)}
                   onMouseLeave={() => setIsMaquinariaOpen(false)}
                 >
@@ -82,19 +74,12 @@ export default function Header() {
                     <Link
                       key={item.label}
                       to={item.href}
-                      className="block px-4 py-2 text-xs font-semibold transition-colors"
+                      className="block px-4 py-2 text-xs font-semibold text-gray-300 hover:text-white transition-colors"
                       style={{
                         fontFamily: "'Barlow Condensed', sans-serif",
-                        color: '#555555',
                       }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.color = '#D4A520';
-                        e.currentTarget.style.backgroundColor = 'rgba(212,165,32,0.08)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.color = '#555555';
-                        e.currentTarget.style.backgroundColor = 'transparent';
-                      }}
+                      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#D4A520')}
+                      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'transparent')}
                       onClick={() => setIsMaquinariaOpen(false)}
                     >
                       {item.label}
@@ -108,7 +93,7 @@ export default function Header() {
           {/* CTA Button */}
           <a
             href="/#contacto"
-            className="hidden xl:block flex-shrink-0 px-4 py-2 text-xs font-bold tracking-widest text-white transition-colors rounded"
+            className="hidden xl:block flex-shrink-0 px-4 py-2 text-xs font-bold tracking-widest text-white transition-colors"
             style={{ backgroundColor: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C49518')}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4A520')}
@@ -119,8 +104,7 @@ export default function Header() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="xl:hidden p-2"
-            style={{ color: '#1A1A1A' }}
+            className="xl:hidden p-2 text-white"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -132,23 +116,23 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div
           className="xl:hidden fixed inset-0 top-16 z-40 overflow-y-auto"
-          style={{ backgroundColor: '#FFFFFF' }}
+          style={{ backgroundColor: '#111111' }}
         >
           <nav className="flex flex-col px-6 py-8 gap-1">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-lg font-bold py-3 border-b border-gray-100 transition-colors"
-                style={{ fontFamily: "'Barlow Condensed', sans-serif", color: '#333333' }}
+                className="text-lg font-bold text-gray-200 hover:text-white py-3 border-b border-gray-800 transition-colors"
+                style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.label}
               </a>
             ))}
             <button
-              className="text-lg font-bold py-3 border-b border-gray-100 text-left flex items-center justify-between"
-              style={{ fontFamily: "'Barlow Condensed', sans-serif", color: '#333333' }}
+              className="text-lg font-bold text-gray-200 py-3 border-b border-gray-800 text-left flex items-center justify-between"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               onClick={() => setIsMaquinariaOpen(!isMaquinariaOpen)}
             >
               MAQUINARIA <ChevronDown size={18} className={isMaquinariaOpen ? 'rotate-180' : ''} />
@@ -159,8 +143,8 @@ export default function Header() {
                   <Link
                     key={item.label}
                     to={item.href}
-                    className="block text-base font-semibold py-2 border-b border-gray-100 transition-colors"
-                    style={{ fontFamily: "'Barlow Condensed', sans-serif", color: '#777777' }}
+                    className="block text-base font-semibold text-gray-400 hover:text-white py-2 border-b border-gray-800 transition-colors"
+                    style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.label}
@@ -170,7 +154,7 @@ export default function Header() {
             )}
             <a
               href="/#contacto"
-              className="mt-6 text-center py-4 text-lg font-bold tracking-widest text-white rounded-lg"
+              className="mt-6 text-center py-4 text-lg font-bold tracking-widest text-white"
               style={{ backgroundColor: '#D4A520', fontFamily: "'Barlow Condensed', sans-serif" }}
               onClick={() => setIsMobileMenuOpen(false)}
             >
